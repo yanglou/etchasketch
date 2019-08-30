@@ -1,16 +1,39 @@
 .gridsquare {
     height: 50%;
     width: 50%;
-    background-color: hsl(0,0%,100%);    
+    background-color: lightgray;
   }
 
 
 .row{
-    display: flex
+    display: flex;
 }
 
-.container {
-    height: 960px;
-    width: 960px;
-    border-style: solid;
+#container {
+    border-style: inset;
+    margin: 5%;
 }
+
+#buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: outset;
+  background-color: powderblue;
+}
+
+@media all and (min-width:768px) {
+  #container, #buttonContainer, .row {
+      max-width: 800px;
+  }
+
+  #container {
+    margin: 20px;
+  }
+
+  }
